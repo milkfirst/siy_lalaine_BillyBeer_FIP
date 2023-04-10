@@ -1,0 +1,455 @@
+/*
+    CSS GUIDE
+
+    1. General Styles
+    2. Main Nav
+    3. Footer
+*/
+
+/* 1. ---------- GENERAL STYLES ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+  }
+  
+  a {
+    color: #000000;
+  }
+
+  #logo {
+    max-width: 70px;
+    margin-top: 10px;
+ }
+
+/* 2. ---------- MAIN NAV ---------- */
+
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    color: rgb(248, 185, 60);
+    transition: 0.3s ease-out;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 42px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  /* menu button */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }  
+
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+  }
+
+  #hero-con {
+    padding-top: 236px;
+    padding-bottom: 500px;
+    background-image: url(../images/three_beers3.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+  }
+
+  #hero-contact {
+    padding-top: 236px;
+    padding-bottom: 500px;
+    background-image: url(../images/hero_contact_full.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+  }
+
+  #hero-story {
+    padding-top: 236px;
+    padding-bottom: 500px;
+    background-image: url(../images/home_contact.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+  }
+
+  /* 3. ---------- FOOTER ---------- */
+
+  #footer-hero {
+    background-color: #003666;
+    background-position: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 60px 50px;
+ }
+
+ #footer-policy #orange {
+    color: orange;
+ }
+ 
+ #footer-hero h3 {
+    margin-top: 20px;
+    font-size: 28px;
+    margin-bottom: 16px;
+ }
+ 
+ #footer-privacy .line-seperator {
+    margin-top: 0px;
+ }
+ 
+ #footer-contact-info h3 {
+    font-size: 23px;
+ }
+ 
+ #footer-contact-info p {
+    margin-bottom: 50px;
+    line-height: 18px;
+    font-size: 11px;
+ }
+ 
+ #footer-nav, #footer-book-now {
+    display: none;
+ }
+
+ #about-us {
+    background-color: #ffaf1a;
+    background-position: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 75px 50px;
+ }
+
+ #about-content a   {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+ }
+
+ #about-content p   {
+    color: white;
+    font-size: 20px;
+ }
+
+ #about-content a:hover   {
+    color: #426AA2;
+    transition: 0.3s ease-in-out;
+ }
+
+ #about-content h2  {
+    font-size: 30px;
+    padding-bottom: 10px;
+ }
+
+ #other-content a   {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+ }
+
+ #other-content p   {
+    color: #000000;
+    font-size: 15px;
+ }
+
+ #other-content a:hover   {
+    color: #426AA2;
+    transition: 0.3s ease-in-out;
+ }
+
+ #other-content h2  {
+    font-size: 30px;
+    padding-bottom: 10px;
+ }
+
+ #contact-me label  {
+    color: white;
+ }
+
+ #leftContent {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  #rightContent {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  #leftContent.is-visible, #rightContent.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .form-box {
+	padding: 2rem;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+  }
+  
+  .form-box label {
+	margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .form-box input,
+  .form-box textarea {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	background-color: transparent;
+	border: 2px solid white;
+	color: #fff;
+	border-radius: 0.25rem;
+    margin-top: 15px;
+  }
+  
+  .form-box textarea {
+	height: 100px;
+  }
+
+  .contact-me	{
+    background-color: #426AA2;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+    border-radius: 20px;
+  }
+
+  .contact-me button	{
+	background-color: #A9C7E9;
+    padding: 15px;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .contact-me button:hover  {
+    background-color: orange;
+    transition: 0.3s ease-in-out;
+  }
+
+  .team-member-info {
+    padding: 20px 50px;
+  }
+
+  .view-details-btn {
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #426AA2;
+    color: white;
+  }
+
+  .view-details-btn:hover   {
+    background-color: orange;
+    transition: 0.3s;
+  }
+
+  @media screen and (min-width: 768px) {
+ 
+    #sticky-nav-con {
+        position: sticky;
+        background-color: #fff;
+        top: 0px;
+        border-bottom: solid 1px #c3c3c3;
+        z-index: 1; 
+        /* had to set z-index as css filters was causing images to overlap, see below */
+     }
+
+    /* A. ---------- MAIN NAV ---------- */
+
+	.header li {
+	  float: left;
+	}
+	.header li a {
+	  padding: 30px 30px;
+	}
+	.header .menu {
+	  clear: none;
+	  float: right;
+	  max-height: none;
+	}
+	.header .menu-icon {
+	  display: none;
+	}
+
+    #hero-con {
+        padding-top: 82.5px;
+        padding-bottom: 500px;
+        background-image: url(../images/three_beers2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      #hero-contact {
+        padding-top: 82.5px;
+        padding-bottom: 500px;
+        background-image: url(../images/hero_contact_full.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      #hero-story {
+        padding-top: 82.5px;
+        padding-bottom: 500px;
+        background-image: url(../images/home_contact.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+    /* B. ---------- FOOTER ---------- */
+
+    #footer-nav {
+        display: block;
+     }
+  
+     #footer-book-now {
+        display: flex;
+        height: 80px;
+        margin-top: 40px;
+     }
+ 
+     #footer-policy {
+         text-align: center;
+         padding: 10px;
+      }
+  
+     #footer-nav {
+        margin-top: 40px;
+        column-count: 2;
+     }
+  
+     #footer-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+     }
+  
+     #footer-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+     }
+ 
+     #footer-nav ul li a:hover {
+         color: orange;
+         transition: 0.3s ease-out;
+         text-decoration: none;
+      }
+  
+     #footer-nav ul li {
+        margin-bottom: 20px;
+     }  
+}

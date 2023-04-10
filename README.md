@@ -1,6 +1,6 @@
 # Prototype for FIP
 
-Creating a single web page prototype of one of our wireframes for the FIP using Tailwind media queries.
+Creating a responsive, single web page prototype of one of our wireframes for the FIP using Tailwind media queries.
 
 ## Contributing
 

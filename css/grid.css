@@ -48,20 +48,46 @@ body, p, h1, h2, h3, h4, h5 {
 .fullbox    {
     background-color: #89c2d9;
     color: #012a4a;
-    border-radius: 5px;
     padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
     margin-bottom:10px;
 }
 
-.videobox    {
+.storybox    {
+    color: #012a4a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailbox    {
+    color: #012a4a;
+    padding: 30px 50px;
+}
+
+.reasonbox    {
     background-color: #89c2d9;
     color: #012a4a;
-    border-radius: 5px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.productbox    {
+    background-image: url(../images/friends.jpg);
+    background-size: cover;
     padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videobox    {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,11 +118,9 @@ body, p, h1, h2, h3, h4, h5 {
 .grid-con { 
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
     max-width: 1920px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /* A keyword indicating that the property contributes nothing to the grid item's placement, indicating auto-placement, an automatic span, or a default span of 1. */
@@ -131,9 +155,6 @@ body, p, h1, h2, h3, h4, h5 {
    .grid-con { 
       display: grid; 
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      grid-column-gap: 20px;
-      padding-left: 16px;
-      padding-right: 16px;
     }
 
    .m-col-auto {grid-column: auto;}
@@ -203,6 +224,7 @@ body, p, h1, h2, h3, h4, h5 {
       display: grid; 
       grid-template-columns: repeat(12, minmax(0, 1fr));
       grid-column-gap: 30px;
+      padding-top: 10px;
       padding-left: 15px;
       padding-right: 15px;
    }
