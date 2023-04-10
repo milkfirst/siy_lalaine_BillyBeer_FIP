@@ -1,6 +1,8 @@
-# Prototype for FIP
+<img src=images/BillyBeer_logo.png alt="Billy Beer logo">
 
-Creating a responsive, single web page prototype of one of our wireframes for the FIP using Tailwind media queries.
+# Billy Beer
+
+This is a 3-page responsive site for the rebrand of Billy Beer.
 
 ## Contributing
 
@@ -12,4 +14,4 @@ Creating a responsive, single web page prototype of one of our wireframes for th
 
 ## Credits
 
-Me :D
+Lalaine S
