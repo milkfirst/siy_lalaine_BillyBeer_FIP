@@ -4,46 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title>Responsive Prototype for FIP</title>
+    <title>Billy Beer Home Page</title>
 </head>
 <body>
-    <header class="grid-con" id="main-header">
-        <div class="box col-start-2 col-end-4 m-col-start-1 m-col-end-3 l-col-end-3" id="main-logo">logo</div>
-        <nav class="box col-start-4 col-end-5 m-col-start-5 m-col-end-13 l-col-start-5 l-col-end-13" id="main-nav">nav</nav>
-    </header>
+    <div id="grid-con">
+        <header class="header">
+            <a href="index.html" class="logo"><img id="logo" src="images/BillyBeer_logo.png"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu col-span-full m-col-start-4 m-col-end-11">
+              <li><a href="ourstory.html">OUR STORY</a></li>
+              <li><a href="#">BILLY BEER ™️</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </header>
+    </div>
 
     <main>
-        <section class="herobox" id="hero-con">
-            hero image
-        </section>
+        <section id="hero-con"></section>
 
-        <section class="grid-con" id="about-con">
-            <div class="fullbox col-span-full m-col-span-full l-col-span-4">about us</div>
-
-            <div class="fullbox col-span-2 m-col-span-6 l-col-start-5 l-col-end-9">reason 1</div>
-            <div class="fullbox col-span-2 m-col-span-6 l-col-span-4">reason 2</div>
-            <div class="fullbox col-span-2 m-col-span-6 l-col-start-5 l-col-end-9">reason 3</div>
-            <div class="fullbox col-span-2 m-col-span-6 l-col-span-4">reason 4</div>
+        <section class="grid-con" id="about-content">
+            <div id="about-us" class="col-span-full">
+                <section id="about-content" class="col-span-full">
+                    <h2 id="leftContent">About Us <i class="fa-solid fa-beer-mug-empty"></i></h2>
+                    <br>
+                    <p id="leftContent">Since 2023, Billy Beer has been inspiring beer enthusiasts to enjoy raise a glass to a good time and enjoy life's simple pleasures. Whether it's sipping by the lake on a warm summer day, or relaxing après-ski with friends, our refreshing and flavorful beers are the perfect accompaniment to your outdoor adventures. At Billy Beer, we believe that the best moments in life are spent outside, with a refreshing bucket of ice-cold Billy Beers.</p>
+                    <br><br>
+                    <a href="ourstory.html" id="leftContent">OUR STORY <i class="fa-solid fa-arrow-right"></i></a>
+                </section>
+            </div>
         </section>
 
         <section class="grid-con" id="products-con">
-            <div class="box col-span-full">Our Products</div>
-            <div class="fullbox col-span-full m-col-span-4">product 1</div>
-            <div class="fullbox box2 m-col-span-4">product 2</div>
-            <div class="fullbox box3 m-col-span-4">product 3</div>
+            <div class="productbox col-span-full">
+                <section id="about-content" class="col-span-full">
+                    <p id="rightContent">Billy is more than just a beer; it's a way of life. Its confident and unassuming style, Billy Beer is a brand that embodies the spirit of living life to the fullest and enjoying every moment.</p>
+                    <br>
+                    <a href="contact.html" id="rightContent">Do you love Billy Beer? TELL US ABOUT IT! <i class="fa-solid fa-arrow-right"></i></a>
+                </section>
+            </div>
         </section>
 
         <section class="grid-con" id="vid-con">
-            <div class="videobox col-span-4 m-col-start-3 m-col-end-11">video</div>
+            <div class="videobox col-span-4 m-col-start-3 m-col-end-11">
+                <video controls>
+                    <source src="videos/Billy_Beer_Main.mp4" alt="video/mp4">
+                </video>
+            </div>
         </section>
 
     </main>
 
-    <footer class="footerbox">
-        footer
+    <footer id="footer-hero">
+        <div class="grid-con">
+            <section id="footer-contact-info" class="col-span-full m-col-start-2 m-col-end-5">
+                <h3>Billy Beer</h3>
+                <p>123 Fanshawe St<br>
+                    London, ON<br>
+                    A1B C2D
+                </p>
+            </section>
+            <nav id="footer-nav" class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">FRANÇAIS</a></li>
+                    <li><a href="#">TERMS & CONDITIONS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="#">COOKIE SETTINGS</a></li>
+                </ul>
+            </nav>
+            <div id="footer-policy" class="col-span-full m-col-start-2 m-col-end-12 line-seperator">
+                <p id="orange">ENJOY RESPONSIBLY</p>
+                <br>
+                <p>Do not share this content with minors.</p>
+                <br>
+                <p>©2023 I love beer, BILLY BEER, London, ON. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
