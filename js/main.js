@@ -48,3 +48,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+  $(function() {
+    $('form').submit(function(e) {
+      e.preventDefault(); // Prevent form submission
+  
+      var $button = $('#send-button'); // Get the send button element
+      $button.text('Sending...'); // Update button text
+  
+      // Send form data to PHP script
+      $.post('send-email.php', $(this).serialize(), function(data) {
+        $button.text('Sent, Thank you'); // Update button text
+        $('form')[0].reset(); // Clear form fields
+        console.log(data); // Log response from PHP script
+      });
+    });
+  });
+  
